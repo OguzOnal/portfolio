@@ -1,0 +1,825 @@
+::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #820b0b; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #100f0f;
+    border-radius: 19px; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #C0C0C0;
+}
+
+header {
+   height:105vh;
+   background-size:cover;
+   background-color: black;
+}
+
+#navbar{
+   display: flex;
+   text-align: center;
+   background-color: transparent;
+   position: fixed; 
+   transition: top 0.3s;
+}
+
+#navbar a {
+   display: block;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 14px;
+   color: #C0C0C0;
+   transition: all 0.7s ease;
+   font-weight: 700;
+   font-family: 'Kaushan Script', cursive;
+   
+ }
+
+ #navbar a:hover{
+  background-color:rgb(153, 2, 2);
+  border-radius: 12%;
+  transform: scale(0.8);
+ }
+
+.hidden-spacer {
+   height: 20rem; 
+}
+
+#welcomeText{
+   align-items: center;
+   font-family: 'Merienda', cursive;
+   font-size: 54px;
+   color: #C0C0C0;
+   font-weight: 700
+}
+#welcomeText_{
+   font-family: 'Merienda', cursive;
+   font-size: 45px;
+   color: #C0C0C0;
+   font-weight: 700
+}
+
+
+#animation{
+   height: 5px;
+   background: rgb(153, 2, 2);
+   position: relative;
+   animation: hrmove 5s infinite;   
+}
+
+@keyframes hrmove {
+    0%   {top: 0px; left: 0px; background: rgb(153, 2, 2);}
+    25%  {top: 0px; left: 0px; background: rgb(38, 11, 11);}
+  }
+
+
+
+.hidden-spacer_{
+   height: 12rem;
+}
+
+._hidden-spacer_{
+    height: 5rem;
+}
+
+#deneme{
+    font-size: 45px;
+    color: #fff;
+    position: relative;
+    font-family: 'Merienda', cursive;
+    animation: denememove 20S;
+    font-weight: 700;   
+  }
+
+  @keyframes denememove {
+    0%   {left: 50%;}
+    25%  {top: 0px; left: 0px;}
+  }
+
+#personal h1,p{
+    text-align: center;
+    line-height: 40px;
+}
+
+
+#personal p{
+    font-family: 'Marck Script', cursive;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#personal h1{
+    font-family: 'Bruno Ace', cursive;
+}
+
+#personal img{
+   border-radius: 50%; 
+   width: 170px;
+   height: 170px;
+}
+
+#ishayatim, #digerisler, #projectsHeader{
+    color: #C0C0C0;
+    font-weight: 700;
+    font-family: 'Bruno Ace', cursive;    
+}
+
+#iletisim, #projeler{
+    font-weight: 700;
+    font-family: 'Bruno Ace', cursive; 
+}
+
+#picHeader{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lobster', cursive;
+    
+}
+
+#picText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Libre Baskerville', serif;
+} 
+
+
+#photographer a{
+    text-decoration: none;
+    color: #e80b0b;
+    
+}
+
+#photographer a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+    color: whitesmoke;
+  
+}
+
+#photographer{
+   position: relative;
+   background:url(./images/top-view-photography-accesories-with-copy-space.jpg);
+   background-size: cover;
+   animation: boxmove 6s infinite; 
+   opacity: 40%;
+   border-radius: 20px;
+   transition: all 2s ease-in-out;
+}
+
+#photographer:hover{
+   transform: scale(1.03);
+   color: white;
+   opacity: 80%;
+   background: url(./images/high-angle-shot-lens-headphones-gimbal-phone.jpg);
+   animation: boxmovehover 6s infinite;
+}
+
+#music{
+   position: relative;
+   background: url(./images/Ekran\ görüntüsü\ 2023-05-29\ 221119.png);
+   background-size: cover;
+   animation: boxmove 6s infinite; 
+   opacity: 40%;
+   border-radius: 20px;
+   transition: all 2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+#music:hover{
+   transform: scale(1.03);
+   opacity: 80%;
+   color:white;
+   background: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5a96b651974509.59030f1c8f466.gif);
+   background-size: cover;
+   animation: boxmovehover 6s infinite;
+}
+
+#ad{
+   position: relative;
+   background: url(./images/internet-reklam-terimleri.png);
+   background-size: cover;
+   animation: boxmove 6s infinite; 
+   opacity: 15%;
+   border-radius: 20px;
+   transition: all 2s ease;
+  
+}
+
+#ad:hover{
+   transform: scale(1.03);
+   opacity: 80%;
+   color: white;
+   background: url(https://i.pinimg.com/originals/5c/7c/b9/5c7cb9004cb3c7f1bac9066ee2ad1e62.gif);
+   background-size: cover;
+   animation: boxmovehover 6s infinite;
+}
+
+@keyframes boxmove {
+    50% {box-shadow: 10px 20px 30px rgb(169, 10, 10);}
+  }
+
+@keyframes boxmovehover {
+    50% {box-shadow: 10px 20px 30px rgb(228, 218, 218);}
+  }
+
+#career, #projects{
+   background-color: rgb(11, 10, 10);
+}
+
+#otherJobs p{
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 100;
+    font-family: 'Libre Baskerville', serif;
+ }
+   
+
+.flipCard {
+   background-color: transparent;
+   width: 300px;
+   height: 300px;
+   perspective: 750px;
+   
+ }
+ 
+ .flipCardInner{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 2s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+ }
+ 
+ .flipCard:hover .flipCardInner{
+   transform: rotateY(180deg);
+   
+ }
+ 
+ .flipCardFront, .flipCardBack{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+ }
+ 
+ .flipCardFront{
+   background-color: #bbb;
+   color: black;
+   animation: boxcard 6s infinite;
+ }
+ 
+ .flipCardBack{
+   background-color: #161617e1;
+   color: white;
+   transform: rotateY(180deg);
+   animation: boxcardhover 6s infinite;
+ }
+
+ @keyframes boxcard {
+    50% {box-shadow: 2px 8px 10px rgb(169, 10, 10);}
+  }
+
+@keyframes boxcardhover {
+    50% {box-shadow: 2px 8px 10px rgb(228, 218, 218);}
+  }
+
+#proje{
+    height: 200px;
+    
+}
+
+
+
+.carousel{
+   width: 60%;
+}
+
+.carousel-inner{
+    border-radius: 75px
+}
+
+.add-padding {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+  
+.border-bottom-color2{
+     border-bottom:7px solid #312c2e;
+}
+ 
+#contactform .controls{
+     padding:0;
+     margin-bottom:30px;
+     border:1px solid #ddd;
+     border-radius:2px;
+}
+ 
+#contactform .form-control{
+     background:transparent !important;
+     border:none;
+     border-bottom:3px solid transparent;
+     border-radius:0;
+     outline:none;
+     box-shadow:none;
+     height:56px;
+     font-size:21px;
+     line-height:32px;
+     font-weight:100;
+     padding-left:64px;
+     -webkit-transition:border-color .3s ease-out;
+     transition:border-color .3s ease-out;
+     border-radius:2px;
+}
+
+#contactform textarea.form-control{
+     height:auto;
+     max-width:100%;
+     min-width:100%;
+     font-size:21px;
+     line-height:32px;
+     padding-top:10px;
+}
+ 
+#contactform .form-control:focus {
+    background:#fff;
+    border-bottom:3px solid #282526;
+    outline:none;
+    box-shadow:none;
+    -webkit-transition:border-color .3s ease-in;
+    transition:border-color .3s ease-in;
+}
+ 
+#sendMessage:hover{
+    background-color:  rgb(153, 2, 2);
+    color: white;
+}
+
+#main-footer {
+     background: #201e1e;
+}
+ 
+#iletisim{
+    font-weight:700
+}
+ 
+ .socialMedia {
+     list-style:none;
+     margin:0;
+     padding:0;
+     margin-bottom:30px;
+ }
+ 
+ .socialMedia li{
+     display:inline-block;
+     margin:0 5px;
+     border-radius:3px;
+     box-shadow:0 4px 0 transparent;
+     -webkit-transition:all .3s ease-out;
+     transition:all .3s ease-out;
+ }
+ 
+ .socialMedia li a {
+     display:block;
+     color:#fff;
+     font-size:21px;
+     width:50px;
+     height:50px;
+     line-height:50px;
+     text-align:center;
+     background: rgb(153, 2, 2);
+     border-radius:50%;
+     -webkit-transition:all .3s ease-out;
+     transition:all .3s ease-out;
+     animation: socialmediamove 5s infinite;
+ }
+ 
+ .socialMedia li a:hover {
+     color:#fff;
+     transform: scale(1.1);
+ }
+
+
+ 
+ @keyframes socialmediamove {
+    0%   {top: 0px; left: 0px; background: rgb(153, 2, 2);}
+    25%  {top: 0px; left: 0px; background: #201c1e;}
+    50%  {top: 0px; left: 0px; background: #201c1e;}
+    100% {top: 0px; left: 0px; background: rgb(153, 2, 2);}   
+
+  }
+
+
+ 
+
+  @media (max-width:1200px){
+
+    #picHeader{
+        top: 5%;
+    }
+
+  }
+
+  @media (max-width:992px){
+
+    #welcomeText{
+        color: rgb(243, 235, 235);
+        font-size: 40px;
+    }
+
+    #welcomeText_,#deneme {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+
+    #picHeader{
+        top: 5%;
+    }
+
+    #picText{    
+        top: 10%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        font-size: 16px;
+       }
+
+  }
+
+
+  @media (max-width:768px){
+    
+    #welcomeText{
+        color: rgb(243, 235, 235);
+        font-size: 40px;
+    }
+
+    #welcomeText_,#deneme {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+    
+    #personal img{
+        margin-top: 4px;
+        width: 150px;
+        height: 150px;
+        border-radius:50%
+    }
+
+    #picHeader{
+        top: 5%;
+    }
+
+    #picText{    
+        top: 10%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        font-size: 13px;
+       }
+    
+    #otherJobs{
+        align-items: center;
+        flex-direction: column;
+    }
+
+  }
+
+  @media (max-width:535px){
+
+    .hidden-spacer{
+        height: 15rem;
+    }
+
+    #welcomeText{
+        color: rgb(243, 235, 235);
+        font-size: 30px;
+    }
+
+    #welcomeText_,#deneme {
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+    }
+
+    #personal img{
+        margin-top: 4px;
+        width: 130px;
+        height: 130px;
+        border-radius:50%
+    }
+
+    .hidden-spacer_ {
+        height: 4rem;
+    }
+
+    #picHeader{
+        top: 5%;
+    }
+
+    #picText{    
+        top: 10%;
+        left: 0%;
+        transform: translate(0%, 0%);
+        font-size: 12px;
+       }
+    
+    .carousel-inner{
+        border-radius: 31px;
+    }
+
+
+  }
+
+
+  @media (max-width:426px){
+    header, #career, #projects{
+        background: url(./images/responsivebg.jpg);
+        background-size: cover;
+    }
+
+    header{
+        height: 100vh;
+    }
+
+    #navbar{
+        margin-top: 20px;
+    }
+
+    #navbar a{
+        font-size: 10px;
+    }
+
+    #navbar a:hover{
+        border: 2px solid black;
+        background-color: black;
+        transform: scale(0.8);
+       }
+
+    .hidden-spacer{
+        height: 16rem;
+    }
+
+    
+
+    #welcomeText{
+        color: rgb(243, 235, 235);
+        font-size: 24px;
+    }
+
+    #welcomeText_,#deneme {
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+    }
+
+    #animation{
+        height: 2px;
+        background: rgb(12, 12, 12);
+        position: relative;
+        animation: hrmove 5s infinite;   
+     }
+     
+     @keyframes hrmove {
+         0%   {background: rgb(251, 244, 244);}
+         25%  {background: rgb(255, 2, 2);}
+         50% {background: #820b0b;}
+         75% {background: rgb(243, 235, 235);}
+         100% {background: rgb(255, 2, 2);}
+       }
+   
+    #personal{
+        background: rgb(11, 11, 11);
+    }
+
+    #personal, p h1{
+        color: rgb(255, 255, 255);
+    }
+
+    #personal h1{
+        font-size: 18px;
+    }
+
+    #personal p{
+        font-size: 12px;
+    }
+
+    #personal img{
+        margin-top: 4px;
+        width: 100px;
+        height: 100px;
+        border-radius:50%
+    }
+
+    ._hidden-spacer_{
+        height: 2rem;
+    }
+
+     #photographer, #music, #ad{
+        height: 420px;
+        opacity: 100%;
+     }
+ 
+    #picHeader{
+        top: 5%;
+    }
+
+     #picText{    
+     top: 10%;
+     left: 0%;
+     transform: translate(0%, 0%);
+     font-size: 9px;
+    }
+
+
+    #photographer, #music, #ad:hover{
+        opacity: 100%;   
+        
+    }
+
+    .carousel-inner{
+        border-radius: 21px;
+    }
+
+     .hidden-spacer_{
+        height: 2rem;
+     }
+
+     @keyframes boxmove {
+        50% {box-shadow: 5px 10px 15px rgb(169, 10, 10);}
+      }
+    
+    @keyframes boxmovehover {
+        50% {box-shadow: 5px 10px 15px rgb(228, 218, 218);}
+      }
+
+    @keyframes boxcard {
+        50% {box-shadow: 1px 4px 5px rgb(169, 10, 10);}
+      }
+    
+    @keyframes boxcardhover {
+        50% {box-shadow: 1px 4px 5px rgb(228, 218, 218);}
+      }
+
+
+  }
+
+  @media (max-width:335px){
+    header, #career, #projects{
+        background: url(./images/responsivebg.jpg);
+        background-size: cover;
+    }
+
+    header{
+        height: 100vh;
+    }
+
+    #navbar{
+        margin-top: 20px;
+        position: relative;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    #navbar a{
+        font-size: 10px;
+    }
+
+    #navbar a:hover{
+        border: 2px solid black;
+        background-color: black;
+        transform: scale(0.8);
+       }
+
+    .hidden-spacer{
+        height: 3rem;
+    }
+
+    
+
+    #welcomeText{
+        color: rgb(243, 235, 235);
+        font-size: 16px;
+    }
+
+    #welcomeText_,#deneme {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+    }
+
+    #animation{
+        height: 2px;
+        background: rgb(12, 12, 12);
+        position: relative;
+        animation: hrmove 5s infinite;   
+     }
+     
+     @keyframes hrmove {
+         0%   {background: rgb(251, 244, 244);}
+         25%  {background: rgb(255, 2, 2);}
+         50% {background: #820b0b;}
+         75% {background: rgb(243, 235, 235);}
+         100% {background: rgb(255, 2, 2);}
+       }
+   
+    #personal{
+        background: rgb(11, 11, 11);
+    }
+
+    #personal, p h1{
+        color: rgb(255, 255, 255);
+    }
+
+    #personal h1{
+        font-size: 18px;
+    }
+
+    #personal p{
+        font-size: 12px;
+    }
+
+    #personal img{
+        margin-top: 4px;
+        width: 70px;
+        height: 70px;
+        border-radius:50%
+    }
+
+    ._hidden-spacer_{
+        height: 2rem;
+    }
+
+     #photographer, #music, #ad{
+        height: 250px;
+        opacity: 100%;
+     }
+ 
+    #picHeader{
+        top: 5%;
+    }
+
+     #picText{    
+     top: 20%;
+     left: 0%;
+     transform: translate(0%, 0%);
+     font-size: 9px;
+     line-height: 15px;
+    }
+
+
+    #photographer, #music, #ad:hover{
+        opacity: 100%;   
+        
+    }
+
+    .carousel-inner{
+        border-radius: 21px;
+    }
+
+     .hidden-spacer_{
+        height: 2rem;
+     }
+
+     @keyframes boxmove {
+        50% {box-shadow: 5px 10px 15px rgb(169, 10, 10);}
+      }
+    
+    @keyframes boxmovehover {
+        50% {box-shadow: 5px 10px 15px rgb(228, 218, 218);}
+      }
+
+    @keyframes boxcard {
+        50% {box-shadow: 1px 4px 5px rgb(169, 10, 10);}
+      }
+    
+    @keyframes boxcardhover {
+        50% {box-shadow: 1px 4px 5px rgb(228, 218, 218);}
+      }
+
+   
+
+
+  }
+
+
+   
+
+
+    
+
+  
+
+
+ 
